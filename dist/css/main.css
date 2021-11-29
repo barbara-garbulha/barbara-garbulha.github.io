@@ -144,7 +144,7 @@ header {
   color: rgba(241, 173, 241, 0.87); }
 
 main {
-  padding: 4rem;
+  padding: 4rem 1.4rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
@@ -205,6 +205,7 @@ main {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
+    max-width: 90%;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
@@ -276,10 +277,42 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes div {
+    font-size: 1.4rem; } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
+  p {
+    text-align: left; }
+  h6 {
+    font-size: 1rem;
+    margin: 0.6rem 0; }
+  main .lg-heading {
+    font-size: 3.5rem;
+    padding-bottom: 4vh; }
+  main h2 {
+    font-size: 1.4rem; }
+  main#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    main#home .lg-heading {
+      margin-top: 1rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  main#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    main#about .lg-heading {
+      margin-top: 1rem; }
+    main#about .bio-image {
+      width: 60%; }
+    main#about .bio p {
+      font-size: 1.2rem;
+      margin-top: 0; }
+  main#contact .boxes div {
+    padding: 10px;
+    font-size: 1.2rem; }
+    main#contact .boxes div p {
+      margin: 0; } }
