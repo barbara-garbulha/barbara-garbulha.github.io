@@ -1,7 +1,7 @@
 {
     "name": "modern_portfolio",
     "version": "1.0.0",
-    "description": "Reponsive portfolio website",
+    "description": "Responsive portfolio website",
     "main": "index.js",
     "scripts": {
         "sass": "node-sass -w scss/ -o dist/css/ --recursive"
@@ -9,6 +9,6 @@
     "author": "Barbara Garbulha",
     "license": "MIT",
     "dependencies": {
-        "node-sass": "^4.9.2"
+        "node-sass": "^7.0.1"
     }
 }
